@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Siro Collins</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Siro Collins</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Academic Planner</h1>
+        <p>Add tasks, mark them as completed, and remove them when done.</p>
+
+        <!-- Input form -->
+        <form class="planner-form" id="planner-form">
+            <input
+                type="text"
+                id="task-input"
+                placeholder="Enter a new task (e.g., Finish COS 106 project)"
+                autocomplete="off">
+            <button type="submit">Add Task</button>
+        </form>
+
+        <!-- Task list (populated by JS) -->
+        <ul id="task-list"></ul>
+
+        <p id="empty-msg" style="color: var(--muted); font-style: italic;">
+            No tasks yet. Add your first task above.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Siro Collins. All rights reserved.</p>
+    </footer>
+
+    <!-- Link the JavaScript file -->
+    <script src="js/planner.js"></script>
+
+</body>
+</html>

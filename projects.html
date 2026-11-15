@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Siro Collins</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Siro Collins</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>My Projects</h1>
+        <p>A selection of hands-on labs and projects from my cybersecurity journey.</p>
+
+        <div class="card-grid">
+
+            <!-- Project 1 -->
+            <article class="card">
+                <img src="images/project1.png" alt="Screenshot of cloud security baseline lab">
+                <h3>Secure Cloud Baseline Lab</h3>
+                <p>
+                    Configured a hardened cloud environment with least-privilege
+                    IAM, encrypted storage, and logging. Documented a baseline
+                    checklist mapped to CIS benchmarks.
+                </p>
+                <p><strong>Tools:</strong> AWS, IAM, CloudTrail, S3 encryption</p>
+                <a href="<a href="https://github.com/siro-devops" class="btn" target="_blank">View Project →</a>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card">
+                <img src="images/project2.png" alt="Screenshot of CI/CD pipeline security scanner">
+                <h3>CI/CD Pipeline Security Scanner</h3>
+                <p>
+                    Built a pipeline stage that scans Infrastructure as Code for
+                    misconfigurations before deployment. Fails the build on
+                    high-severity findings.
+                </p>
+                <p><strong>Tools:</strong> GitHub Actions, Checkov, Terraform</p>
+                <a href="<a href="https://github.com/siro-devops" class="btn" target="_blank">View Project →</a>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="card">
+                <img src="images/project3.png" alt="Screenshot of LLM threat model report">
+                <h3>LLM Threat Model</h3>
+                <p>
+                    Produced a threat model for an LLM-powered assistant using
+                    OWASP Top 10 for LLMs and MITRE ATLAS, identifying prompt
+                    injection and data-exfiltration risks.
+                </p>
+                <p><strong>Tools:</strong> OWASP LLM Top 10, MITRE ATLAS, STRIDE</p>
+                <a href="<a href="https://github.com/siro-devops" class="btn" target="_blank">View Project →</a>
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Siro Collins. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
